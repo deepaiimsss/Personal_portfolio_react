@@ -636,7 +636,7 @@ input, textarea { font-family: var(--font); }
 }
 .info-pair { display: flex; flex-direction: column; gap: 3px; }
 .info-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); }
-.info-val { font-size: 0.9rem; font-weight: 500; color: var(--text); }
+.info-val { font-size: 0.9rem; font-weight: 500; color: var(--text); word-break: break-word; overflow-wrap: break-word; max-width: 100%; }
 
 .mt-20 { margin-top: 20px; }
 
@@ -1211,7 +1211,7 @@ html, body, .scroll-container {
     }
 
     #home {
-        padding-top: 80px !important;
+        padding-top: 70px !important;
         padding-bottom: 10px !important;
         display: flex !important;
         flex-direction: column !important;
@@ -1250,9 +1250,9 @@ html, body, .scroll-container {
     }
 
     .avatar-ring {
-        width: 85px !important;
-        height: 85px !important;
-        margin-top: 4px;
+        width: 120px !important;
+        height: 120px !important;
+        margin-top: 0;
     }
 
     .floating-tag {
@@ -1287,7 +1287,7 @@ html, body, .scroll-container {
         max-width: 100%;
         font-size: 0.75rem;
         line-height: 1.35;
-        margin: 0 auto 6px;
+        margin: 0 auto 4px;
     }
 
     .counter-strip {
@@ -1296,7 +1296,7 @@ html, body, .scroll-container {
         gap: 6px !important;
         width: 100% !important;
         max-width: 320px !important;
-        margin: 0 auto 8px !important;
+        margin: 0 auto 4px !important;
         padding: 0 !important;
         background: transparent !important;
         border: none !important;
