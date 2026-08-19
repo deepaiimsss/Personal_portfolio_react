@@ -1440,6 +1440,7 @@ html, body, .scroll-container {
     .about-inner {
         width: 100%;
         box-sizing: border-box;
+        padding: 0 15px;
     }
 
     .about-left, .about-right {
