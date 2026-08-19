@@ -1432,6 +1432,11 @@ html, body, .scroll-container {
     }
 
     /* About Section */
+    .about-inner {
+        width: 90%;
+        margin: 0 auto;
+    }
+
     .about-left, .about-right {
         width: 100%;
     }
