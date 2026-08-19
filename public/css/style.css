@@ -563,6 +563,8 @@ input, textarea { font-family: var(--font); }
     flex-direction: column;
     gap: 40px;
     width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .section-header {
@@ -618,10 +620,13 @@ input, textarea { font-family: var(--font); }
     font-weight: 600;
     line-height: 1.4;
     margin-bottom: 20px;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
 }
 .accent { color: var(--accent); }
 
-.about-para { color: var(--text-muted); line-height: 1.8; margin-bottom: 16px; }
+.about-para { color: var(--text-muted); line-height: 1.8; margin-bottom: 16px; word-break: break-word; overflow-wrap: break-word; max-width: 100%; }
 
 /* Personal Info Grid */
 .info-grid {
@@ -1204,10 +1209,11 @@ html, body, .scroll-container {
     
     /* Ensure all sections have clean clearance below fixed header */
     .section {
-        padding: 85px 5% 50px !important;
+        padding: 85px 8% 50px !important;
         height: auto !important;
         min-height: 100vh;
-        overflow: visible;
+        overflow-x: hidden !important;
+        overflow-y: visible;
     }
 
     #home {
