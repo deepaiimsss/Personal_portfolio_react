@@ -1211,8 +1211,8 @@ html, body, .scroll-container {
     }
 
     #home {
-        padding-top: 75px !important;
-        padding-bottom: 20px !important;
+        padding-top: 65px !important;
+        padding-bottom: 10px !important;
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
@@ -1250,8 +1250,8 @@ html, body, .scroll-container {
     }
 
     .avatar-ring {
-        width: 115px !important;
-        height: 115px !important;
+        width: 90px !important;
+        height: 90px !important;
     }
 
     .floating-tag {
@@ -1263,39 +1263,39 @@ html, body, .scroll-container {
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-        font-size: 0.72rem;
-        gap: 6px;
+        font-size: 0.65rem;
+        gap: 4px;
         margin-top: 0;
-        margin-bottom: 8px;
+        margin-bottom: 4px;
     }
 
     .hero-name {
-        font-size: clamp(1.8rem, 8vw, 2.2rem) !important;
-        line-height: 1.15;
-        margin-bottom: 4px;
+        font-size: clamp(1.6rem, 7vw, 2rem) !important;
+        line-height: 1.1;
+        margin-bottom: 2px;
     }
 
     .hero-role {
         justify-content: center;
-        font-size: 1rem;
-        margin-bottom: 8px;
+        font-size: 0.9rem;
+        margin-bottom: 4px;
         min-height: auto;
     }
 
     .hero-bio {
         max-width: 100%;
-        font-size: 0.8rem;
-        line-height: 1.4;
-        margin: 0 auto 10px;
+        font-size: 0.75rem;
+        line-height: 1.35;
+        margin: 0 auto 6px;
     }
 
     .counter-strip {
         display: grid !important;
         grid-template-columns: repeat(2, 1fr) !important;
-        gap: 8px !important;
+        gap: 6px !important;
         width: 100% !important;
         max-width: 320px !important;
-        margin: 4px auto 12px !important;
+        margin: 0 auto 8px !important;
         padding: 0 !important;
         background: transparent !important;
         border: none !important;
@@ -1309,13 +1309,13 @@ html, body, .scroll-container {
         text-align: center !important;
         background: var(--glass) !important;
         border: 1px solid var(--border) !important;
-        border-radius: 10px !important;
-        padding: 10px 8px !important;
+        border-radius: 8px !important;
+        padding: 6px 4px !important;
         box-sizing: border-box !important;
     }
 
     .counter-num {
-        font-size: 1.3rem !important;
+        font-size: 1.15rem !important;
         font-weight: 800 !important;
         color: var(--accent) !important;
         line-height: 1.1 !important;
@@ -1332,15 +1332,16 @@ html, body, .scroll-container {
 
     .social-row {
         justify-content: center;
-        gap: 8px;
-        margin: 0 auto 12px;
-        max-width: 300px;
+        gap: 6px;
+        margin: 0 auto 8px;
+        max-width: 310px;
+        flex-wrap: wrap;
     }
 
     .social-row a {
-        width: 36px;
-        height: 36px;
-        font-size: 0.9rem;
+        width: 30px;
+        height: 30px;
+        font-size: 0.8rem;
     }
 
     .hero-ctas {
@@ -1358,8 +1359,8 @@ html, body, .scroll-container {
         flex: 1 1 auto !important;
         width: auto !important;
         justify-content: center !important;
-        padding: 10px 14px !important;
-        font-size: 0.8rem !important;
+        padding: 8px 12px !important;
+        font-size: 0.75rem !important;
         white-space: nowrap !important;
     }
 
