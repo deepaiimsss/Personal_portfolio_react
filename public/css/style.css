@@ -1209,11 +1209,10 @@ html, body, .scroll-container {
     
     /* Ensure all sections have clean clearance below fixed header */
     .section {
-        padding: 85px 8% 50px !important;
+        padding: 85px 20px 50px !important;
         height: auto !important;
         min-height: 100vh;
-        overflow-x: hidden !important;
-        overflow-y: visible;
+        overflow: visible;
     }
 
     #home {
@@ -1439,8 +1438,8 @@ html, body, .scroll-container {
 
     /* About Section */
     .about-inner {
-        width: 85%;
-        margin: 0 auto;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .about-left, .about-right {
