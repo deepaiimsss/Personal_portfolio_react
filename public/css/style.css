@@ -1211,7 +1211,7 @@ html, body, .scroll-container {
     }
 
     #home {
-        padding-top: 65px !important;
+        padding-top: 80px !important;
         padding-bottom: 10px !important;
         display: flex !important;
         flex-direction: column !important;
@@ -1250,8 +1250,9 @@ html, body, .scroll-container {
     }
 
     .avatar-ring {
-        width: 90px !important;
-        height: 90px !important;
+        width: 85px !important;
+        height: 85px !important;
+        margin-top: 4px;
     }
 
     .floating-tag {
@@ -1521,26 +1522,7 @@ html, body, .scroll-container {
 /* iPhone Pro Max & Large Mobiles (max-width: 430px) */
 @media (max-width: 430px) {
     .section {
-        padding: 80px 14px 40px !important;
-    }
-    .hero-name {
-        font-size: 2rem !important;
-    }
-    .avatar-ring {
-        width: 150px !important;
-        height: 150px !important;
-    }
-    .hero-ctas {
-        gap: 8px;
-    }
-    .hero-ctas .btn-pill {
-        padding: 10px 14px !important;
-        font-size: 0.8rem !important;
-    }
-    .social-row a {
-        width: 36px;
-        height: 36px;
-        font-size: 0.9rem;
+        padding: 70px 14px 30px !important;
     }
     .section-title {
         font-size: 1.55rem;
@@ -1551,54 +1533,12 @@ html, body, .scroll-container {
     .btn-pitch {
         padding: 8px 12px;
     }
-    .counter-strip {
-        gap: 10px !important;
-    }
 }
 
 /* iPhone SE & Compact Phones (max-width: 380px) */
 @media (max-width: 380px) {
     .section {
-        padding: 85px 10px 80px !important; /* Massive bottom padding to push CTAs up from Lo-Fi widget */
-        min-height: 100vh !important;
-        justify-content: flex-start !important;
-    }
-    .hero-name {
-        font-size: 1.7rem !important;
-        margin-bottom: 4px;
-    }
-    .hero-role {
-        margin-bottom: 4px;
-    }
-    .hero-bio {
-        margin: 0 auto 10px;
-        font-size: 0.75rem;
-    }
-    .avatar-ring {
-        width: 115px !important;
-        height: 115px !important;
-        margin-bottom: 4px !important;
-    }
-    .hero-ctas {
-        flex-direction: row !important; /* Put side-by-side to save massive vertical space */
-        flex-wrap: nowrap !important;
-        gap: 6px;
-        margin: 0 auto 90px !important; /* Enforce massive bottom margin to dodge LoFi widget */
-    }
-    .hero-ctas .btn-pill {
-        flex: 1 1 auto !important; /* ensure they share space evenly */
-        width: auto !important; /* override the 100% width from 430px breakpoint! */
-        padding: 10px 8px !important;
-        font-size: 0.72rem !important;
-        white-space: nowrap;
-    }
-    .social-row {
-        margin: 0 auto 10px;
-    }
-    .social-row a {
-        width: 32px;
-        height: 32px;
-        font-size: 0.8rem;
+        padding: 70px 10px 30px !important;
     }
     .section-title {
         font-size: 1.45rem;
@@ -1606,23 +1546,10 @@ html, body, .scroll-container {
     .btn-pitch {
         padding: 6px 10px;
     }
-    .counter-strip {
-        margin: 4px auto 10px !important;
-        gap: 8px !important;
-    }
-    .counter-item {
-        padding: 6px 4px !important;
-    }
-    .counter-num {
-        font-size: 1.1rem !important;
-    }
-    .counter-label {
-        font-size: 0.55rem !important;
-    }
     .theme-toggle-btn {
         width: 38px !important;
         height: 38px !important;
-        padding: 0 0 0 6px !important; /* Bump icon to right so it doesn't clip on left edge */
+        padding: 0 0 0 6px !important;
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
@@ -1632,29 +1559,7 @@ html, body, .scroll-container {
 /* Galaxy Z Fold (Cover Screen) & Ultra-Narrow (max-width: 350px) */
 @media (max-width: 350px) {
     .section {
-        padding: 85px 8px 80px !important;
-        justify-content: flex-start !important;
-    }
-    .hero-name {
-        font-size: 1.6rem !important;
-    }
-    .avatar-ring {
-        width: 110px !important;
-        height: 110px !important;
-    }
-    .hero-bio {
-        font-size: 0.78rem !important;
-    }
-    .counter-num {
-        font-size: 1.05rem !important;
-    }
-    .counter-label {
-        font-size: 0.55rem !important;
-    }
-    .social-row a {
-        width: 30px;
-        height: 30px;
-        font-size: 0.75rem;
+        padding: 70px 8px 30px !important;
     }
     .theme-panel {
         top: 75px !important;
