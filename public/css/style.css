@@ -1211,8 +1211,8 @@ html, body, .scroll-container {
     }
 
     #home {
-        padding-top: 95px !important;
-        padding-bottom: 85px !important; /* Huge bottom padding to guarantee CTAs never collide with Lo-Fi widget */
+        padding-top: 75px !important;
+        padding-bottom: 20px !important;
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
@@ -1250,8 +1250,8 @@ html, body, .scroll-container {
     }
 
     .avatar-ring {
-        width: 140px !important;
-        height: 140px !important;
+        width: 115px !important;
+        height: 115px !important;
     }
 
     .floating-tag {
@@ -1270,9 +1270,9 @@ html, body, .scroll-container {
     }
 
     .hero-name {
-        font-size: clamp(2rem, 8.5vw, 2.5rem) !important;
+        font-size: clamp(1.8rem, 8vw, 2.2rem) !important;
         line-height: 1.15;
-        margin-bottom: 6px;
+        margin-bottom: 4px;
     }
 
     .hero-role {
@@ -1284,19 +1284,18 @@ html, body, .scroll-container {
 
     .hero-bio {
         max-width: 100%;
-        font-size: 0.84rem;
-        line-height: 1.55;
-        margin: 0 auto 14px;
+        font-size: 0.8rem;
+        line-height: 1.4;
+        margin: 0 auto 10px;
     }
 
-    /* Symmetrical 2x2 Counter Stats Grid */
     .counter-strip {
         display: grid !important;
         grid-template-columns: repeat(2, 1fr) !important;
-        gap: 10px !important;
+        gap: 8px !important;
         width: 100% !important;
         max-width: 320px !important;
-        margin: 8px auto 16px !important;
+        margin: 4px auto 12px !important;
         padding: 0 !important;
         background: transparent !important;
         border: none !important;
@@ -1334,7 +1333,7 @@ html, body, .scroll-container {
     .social-row {
         justify-content: center;
         gap: 8px;
-        margin: 0 auto 18px;
+        margin: 0 auto 12px;
         max-width: 300px;
     }
 
@@ -1347,12 +1346,12 @@ html, body, .scroll-container {
     .hero-ctas {
         display: flex !important;
         flex-direction: row !important;
-        flex-wrap: nowrap !important; /* Force side-by-side on all mobiles */
+        flex-wrap: nowrap !important;
         justify-content: center !important;
         width: 100% !important;
         max-width: 340px !important;
         gap: 8px !important;
-        margin: 0 auto 90px !important; /* MASSIVE bottom margin so buttons never touch the fixed LoFi widget */
+        margin: 0 auto 15px !important;
     }
 
     .hero-ctas .btn-pill {
