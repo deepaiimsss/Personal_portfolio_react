@@ -1729,7 +1729,7 @@ body,
         /* Put Avatar at top of hero */
         display: flex !important;
         justify-content: center !important;
-        margin: -14px auto 10px !important;
+        margin: -30px auto 22px !important;
         width: 100% !important;
         flex: none !important;
     }
@@ -2155,7 +2155,7 @@ body,
     }
 
     .home-visual {
-        margin: -14px auto 10px !important;
+        margin: -30px auto 22px !important;
     }
 
     .avatar-ring {
