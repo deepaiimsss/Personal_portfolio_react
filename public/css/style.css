@@ -1517,6 +1517,32 @@ html, body, .scroll-container {
         padding: 5px 9px;
     }
 
+    /* Interactive Code Bento */
+    .code-bento {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        margin-top: 18px !important;
+        overflow: hidden !important;
+    }
+    .code-header {
+        padding: 6px 10px !important;
+    }
+    .code-tab {
+        font-size: 0.7rem !important;
+        padding: 3px 8px !important;
+    }
+    .code-body {
+        font-size: 0.72rem !important;
+        line-height: 1.5 !important;
+        padding: 12px 10px !important;
+        overflow-x: hidden !important;
+        white-space: pre-wrap !important;
+        word-break: break-word !important;
+        box-sizing: border-box !important;
+        width: 100% !important;
+    }
+
     /* Contact Form */
     .form-row {
         grid-template-columns: 1fr;
@@ -2630,13 +2656,17 @@ body.light-mode .code-bento {
     font-family: monospace;
 }
 .code-body {
-    padding: 16px;
+    padding: 14px 16px;
     margin: 0;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Consolas', 'Fira Code', 'Monaco', 'Courier New', Courier, monospace;
     font-size: 0.78rem;
-    line-height: 1.6;
+    line-height: 1.55;
     color: #d1d5db;
-    overflow-x: auto;
+    overflow-x: hidden;
+    white-space: pre-wrap;
+    word-break: break-word;
+    box-sizing: border-box;
+    width: 100%;
 }
 .code-body.hidden {
     display: none;
