@@ -1699,7 +1699,7 @@ body,
     }
 
     #home {
-        padding-top: 68px !important;
+        padding-top: 52px !important;
         padding-bottom: 15px !important;
         display: flex !important;
         flex-direction: column !important;
@@ -1724,7 +1724,7 @@ body,
         /* Put Avatar at top of hero */
         display: flex !important;
         justify-content: center !important;
-        margin: -10px auto 2px !important;
+        margin: -18px auto 2px !important;
         width: 100% !important;
         flex: none !important;
     }
@@ -1740,8 +1740,8 @@ body,
     }
 
     .avatar-ring {
-        width: 155px !important;
-        height: 155px !important;
+        width: 175px !important;
+        height: 175px !important;
         margin-top: 0 !important;
         margin-bottom: 0 !important;
     }
@@ -2143,6 +2143,19 @@ body,
         box-sizing: border-box !important;
     }
 
+    #home {
+        padding-top: 52px !important;
+    }
+
+    .home-visual {
+        margin: -18px auto 2px !important;
+    }
+
+    .avatar-ring {
+        width: 170px !important;
+        height: 170px !important;
+    }
+
     .section-title {
         font-size: 1.55rem;
     }
@@ -2208,8 +2221,8 @@ body,
     }
 
     .avatar-ring {
-        width: 150px;
-        height: 150px;
+        width: 160px !important;
+        height: 160px !important;
     }
 
     .floating-tag {
