@@ -1252,7 +1252,7 @@ html, body, .scroll-container {
     }
 
     #home {
-        padding-top: 75px !important;
+        padding-top: 68px !important;
         padding-bottom: 15px !important;
         display: flex !important;
         flex-direction: column !important;
@@ -1276,7 +1276,7 @@ html, body, .scroll-container {
         order: -1 !important; /* Put Avatar at top of hero */
         display: flex !important;
         justify-content: center !important;
-        margin: 0 auto 2px !important;
+        margin: 0 auto 4px !important;
         width: 100% !important;
         flex: none !important;
     }
@@ -1292,8 +1292,8 @@ html, body, .scroll-container {
     }
 
     .avatar-ring {
-        width: 130px !important;
-        height: 130px !important;
+        width: 155px !important;
+        height: 155px !important;
         margin-top: 0 !important;
         margin-bottom: 0 !important;
     }
