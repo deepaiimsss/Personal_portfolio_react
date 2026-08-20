@@ -383,29 +383,47 @@ function scrambleHeroName() {
 /* ===================================================
    11. PURE CANVAS CONFETTI EXPLOSION ENGINE
    =================================================== */
-window.launchConfetti = function () {
-    const canvas = document.getElementById('confettiCanvas');
-    if (!canvas) return;
+window.launchConfetti = function (originX, originY) {
+    let canvas = document.getElementById('confettiCanvas');
+    if (!canvas) {
+        canvas = document.createElement('canvas');
+        canvas.id = 'confettiCanvas';
+        canvas.className = 'confetti-canvas';
+        canvas.style.position = 'fixed';
+        canvas.style.top = '0';
+        canvas.style.left = '0';
+        canvas.style.width = '100vw';
+        canvas.style.height = '100vh';
+        canvas.style.pointerEvents = 'none';
+        canvas.style.zIndex = '99999';
+        document.body.appendChild(canvas);
+    }
     const ctx = canvas.getContext('2d');
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    const colors = ['#6c63ff', '#ff3366', '#00d4ff', '#ff9f43', '#43e97b', '#FF9933', '#ffd700'];
+    const startX = typeof originX === 'number' ? originX : canvas.width / 2;
+    const startY = typeof originY === 'number' ? originY : canvas.height * 0.5;
+
+    const colors = ['#6c63ff', '#ff3366', '#00d4ff', '#ff9f43', '#43e97b', '#FF9933', '#ffd700', '#a855f7'];
     const confetti = [];
-    const count = 120;
+    const count = 140;
 
     for (let i = 0; i < count; i++) {
+        const shape = Math.random() > 0.4 ? 'rect' : 'circle';
         confetti.push({
-            x: canvas.width / 2,
-            y: canvas.height * 0.7,
-            w: Math.random() * 8 + 4,
-            h: Math.random() * 6 + 4,
+            x: startX,
+            y: startY,
+            w: Math.random() * 9 + 4,
+            h: Math.random() * 7 + 4,
+            r: Math.random() * 4 + 2,
+            shape: shape,
             color: colors[Math.floor(Math.random() * colors.length)],
-            vx: (Math.random() - 0.5) * 16,
-            vy: (Math.random() * -16) - 4,
+            vx: (Math.random() - 0.5) * 22,
+            vy: (Math.random() * -18) - 4,
             rotation: Math.random() * 360,
-            vRot: (Math.random() - 0.5) * 10,
-            gravity: 0.35,
+            vRot: (Math.random() - 0.5) * 12,
+            gravity: 0.38,
             opacity: 1
         });
     }
@@ -420,7 +438,7 @@ window.launchConfetti = function () {
             p.y += p.vy;
             p.vy += p.gravity;
             p.rotation += p.vRot;
-            p.opacity -= 0.007;
+            p.opacity -= 0.008;
 
             if (p.opacity > 0) {
                 active++;
@@ -429,7 +447,13 @@ window.launchConfetti = function () {
                 ctx.rotate(p.rotation * Math.PI / 180);
                 ctx.fillStyle = p.color;
                 ctx.globalAlpha = Math.max(0, p.opacity);
-                ctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h);
+                if (p.shape === 'rect') {
+                    ctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h);
+                } else {
+                    ctx.beginPath();
+                    ctx.arc(0, 0, p.r, 0, Math.PI * 2);
+                    ctx.fill();
+                }
                 ctx.restore();
             }
         });
@@ -444,19 +468,28 @@ window.launchConfetti = function () {
     render();
 };
 
-// Trigger confetti when clicking any CV download button
-document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('a[download]').forEach(btn => {
-        btn.addEventListener('click', () => {
-            if (window.launchConfetti) window.launchConfetti();
-            const toast = document.getElementById('toast-success');
-            if (toast) {
-                toast.textContent = '📄 CV Downloaded! Thank you for reviewing.';
-                toast.classList.add('show');
-                setTimeout(() => toast.classList.remove('show'), 3500);
-            }
-        });
-    });
+// Global click handler to trigger confetti sprinkles on any CV download button
+document.addEventListener('click', (e) => {
+    const downloadLink = e.target.closest('a[download], a[href*="Cv"], a[href*="cv"], a[href$=".pdf"]');
+    const isCvBtn = downloadLink || (e.target.closest('a') && e.target.closest('a').textContent.toLowerCase().includes('download cv'));
+    
+    if (isCvBtn) {
+        const targetEl = downloadLink || e.target.closest('a') || e.target;
+        const rect = targetEl.getBoundingClientRect();
+        const originX = rect.left + rect.width / 2;
+        const originY = rect.top + rect.height / 2;
+        
+        if (window.launchConfetti) {
+            window.launchConfetti(originX, originY);
+        }
+        
+        const toast = document.getElementById('toast-success');
+        if (toast) {
+            toast.textContent = '🎉 CV Downloaded! Thank you for reviewing.';
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 3500);
+        }
+    }
 });
 
 /* ===================================================

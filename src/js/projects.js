@@ -162,7 +162,7 @@ function initCopyElements() {
     });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+function initProjects() {
     // Attach click listener to project cards
     const cards = document.querySelectorAll('.proj-card');
     cards.forEach((card, index) => {
@@ -186,4 +186,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     initCopyElements();
-});
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initProjects);
+} else {
+    initProjects();
+}
