@@ -160,7 +160,7 @@ export const htmlContent = `
                     </div>
 
                     <div class="hero-ctas">
-                        <a href="images/MyCv.pdf" download class="btn-pill btn-light"><i class="fa fa-download"></i>
+                        <a href="images/Deepjit Resume.pdf" download class="btn-pill btn-light"><i class="fa fa-download"></i>
                             Download CV</a>
                         <a href="#contact" class="nav-link btn-pill btn-ghost" data-section="contact">Let's Talk <i
                                 class="fa fa-arrow-right"></i></a>
@@ -1319,7 +1319,7 @@ export const htmlContent = `
                     target="_blank" class="btn-pill btn-light">
                     <i class="fa fa-envelope"></i> Send Email
                 </a>
-                <a href="images/MyCv.pdf" download class="btn-pill btn-ghost" id="pitchDownloadCv">
+                <a href="images/Deepjit Resume.pdf" download class="btn-pill btn-ghost" id="pitchDownloadCv">
                     <i class="fa fa-download"></i> Download CV
                 </a>
             </div>
@@ -1421,9 +1421,8 @@ export const htmlContent = `
     
     
 `;
-
 export const scriptsToLoad = [
-  "https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js"
+    "https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js"
 ];
 
 export const inlineScripts = [];
