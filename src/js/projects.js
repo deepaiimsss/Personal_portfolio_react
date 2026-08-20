@@ -16,7 +16,7 @@ const projectsData = [
         ],
         techs: ["React.js", "TypeScript", "Tailwind CSS", "Puter.js", "LLM API"],
         github: "https://github.com/deepaimsss",
-        live: "https://deepjit.com"
+        live: "https://deepjitnita.vercel.app"
     },
     {
         title: "Tax Portal (National Informatics Centre)",
@@ -31,7 +31,7 @@ const projectsData = [
         ],
         techs: ["React.js", "Vite", "Spring Boot", "PostgreSQL", "REST APIs"],
         github: "https://github.com/deepaimsss",
-        live: "https://deepjit.com"
+        live: "https://deepjitnita.vercel.app"
     },
     {
         title: "Retune Music Platform",
@@ -46,7 +46,7 @@ const projectsData = [
         ],
         techs: ["React JS", "Node.js", "Express", "HTML5 Audio", "CSS3"],
         github: "https://github.com/deepaimsss",
-        live: "https://deepjit.com"
+        live: "https://deepjitnita.vercel.app"
     },
     {
         title: "Flipkart Full-Stack Clone",
@@ -61,7 +61,7 @@ const projectsData = [
         ],
         techs: ["React", "Redux", "Node.js", "Express", "MongoDB"],
         github: "https://github.com/deepaimsss",
-        live: "https://deepjit.com"
+        live: "https://deepjitnita.vercel.app"
     },
     {
         title: "Telegram Group-Calls Music Bot",
@@ -91,7 +91,7 @@ const projectsData = [
         ],
         techs: ["HTML5", "CSS3", "JavaScript", "LocalStorage"],
         github: "https://github.com/deepaimsss",
-        live: "https://deepjit.com"
+        live: "https://deepjitnita.vercel.app"
     }
 ];
 
@@ -125,10 +125,6 @@ function openProjectModal(index) {
         span.textContent = t;
         techsWrap.appendChild(span);
     });
-
-    // Links
-    document.getElementById('pmGithub').href = proj.github;
-    document.getElementById('pmLive').href = proj.live;
 
     modal.classList.add('open');
     document.body.style.overflow = 'hidden';

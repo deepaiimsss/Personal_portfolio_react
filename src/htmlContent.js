@@ -154,7 +154,7 @@ export const htmlContent = `
                             title="YouTube"><i class="fab fa-youtube"></i></a>
                         <a href="https://ko-fi.com/deepaiims" target="_blank" title="Ko-fi"><i
                                 class="fa fa-coffee"></i></a>
-                        <a href="https://deepjit.com" target="_blank" title="Website"><i class="fas fa-globe"></i></a>
+                        <a href="https://deepjitnita.vercel.app" target="_blank" title="Website"><i class="fas fa-globe"></i></a>
                         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dasdeepjit1234@gmail.com" target="_blank"
                             title="Email (dasdeepjit1234@gmail.com)"><i class="fa fa-envelope"></i></a>
                     </div>
@@ -646,7 +646,7 @@ export const htmlContent = `
                             <div class="info-pair"><span class="info-label">Phone</span><span class="info-val">+91
                                     6009233857</span></div>
                             <div class="info-pair"><span class="info-label">Website</span><span
-                                    class="info-val">deepjit.com</span></div>
+                                    class="info-val">deepjitnita.vercel.app</span></div>
                         </div>
 
                         <a href="#contact" class="nav-link btn-pill btn-accent mt-20" data-section="contact">Hire Me <i
@@ -1199,7 +1199,7 @@ export const htmlContent = `
                             </div>
                             <div class="contact-card">
                                 <div class="cc-icon"><i class="fa fa-globe"></i></div>
-                                <div class="cc-text"><span>Website</span><strong>deepjit.com</strong></div>
+                                <div class="cc-text"><span>Website</span><strong>deepjitnita.vercel.app</strong></div>
                             </div>
                         </div>
                         <div class="contact-socials">
@@ -1339,12 +1339,6 @@ export const htmlContent = `
                 <ul class="pm-features" id="pmFeatures"></ul>
                 <div class="pm-section-label">Technologies Used</div>
                 <div class="pm-techs" id="pmTechs"></div>
-                <div class="pm-actions">
-                    <a href="#" target="_blank" id="pmGithub" class="btn-pill btn-light"><i class="fab fa-github"></i>
-                        View Source Code</a>
-                    <a href="#" target="_blank" id="pmLive" class="btn-pill btn-accent"><i
-                            class="fas fa-external-link-alt"></i> Open Project</a>
-                </div>
             </div>
         </div>
     </div>
