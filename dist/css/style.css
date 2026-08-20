@@ -1199,6 +1199,40 @@ html, body, .scroll-container {
 
 /* Mobile Devices, Phablets & iPhones (max-width: 768px) */
 @media (max-width: 768px) {
+    /* Toast notification from TOP on mobile to avoid bottom button collision */
+    .toast {
+        top: 75px !important;
+        bottom: auto !important;
+        left: 50% !important;
+        right: auto !important;
+        transform: translate(-50%, -60px) !important;
+        opacity: 0;
+        padding: 10px 18px !important;
+        font-size: 0.82rem !important;
+        border-radius: 30px !important;
+        backdrop-filter: blur(16px) !important;
+        -webkit-backdrop-filter: blur(16px) !important;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6) !important;
+        width: max-content !important;
+        max-width: calc(100vw - 32px) !important;
+        text-align: center !important;
+        z-index: 99999 !important;
+    }
+    .toast.show {
+        transform: translate(-50%, 0) !important;
+        opacity: 1 !important;
+    }
+    .toast-success {
+        background: rgba(16, 24, 40, 0.95) !important;
+        border: 1px solid var(--accent3) !important;
+        color: var(--accent3) !important;
+    }
+    .toast-error {
+        background: rgba(16, 24, 40, 0.95) !important;
+        border: 1px solid var(--accent2) !important;
+        color: var(--accent2) !important;
+    }
+
     .header {
         padding: 0 5%;
         height: 64px;
